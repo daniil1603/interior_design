@@ -1,0 +1,27 @@
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    nav{
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        left: -100vw;
+        transition: all 0.3s;
+    }
+    .nav_active{
+        left: 0;
+    }
+    main{
+        padding: 20px 10px;
+    }
+    .showcase img{
+        margin: 2% 0%;
+    }
+    .member,.tariff{
+        margin: 10px 0;
+    }
+    footer{
+        text-align: center;
+    }
+}

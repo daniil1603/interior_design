@@ -1,0 +1,230 @@
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+.hamburger{
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px #45015d6c;
+    border: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    z-index: 3;
+    top: 10px;
+    left: 10px;
+    outline: none;
+    display: none;
+    transition: all 0.5s;
+}
+.hamburger span{
+    position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #45015d;
+  left: 50%;
+  margin-left: -20px;
+  transition: all 0.3s;
+
+}
+.hamburger span:nth-child(1){
+    top: 15px;
+}
+.hamburger span:nth-child(2){
+    top: 50%;
+     margin-top: -1px;
+}
+.hamburger span:nth-child(3){
+    bottom: 15px;
+}
+.hamburger_active span:nth-child(1){
+    transform:rotate(45deg);
+    top:25px ;
+}
+.hamburger_active span:nth-child(3){
+    transform:rotate(-45deg);
+    bottom: 22.5px;
+}
+.hamburger_active span:nth-child(2){
+    opacity: 0;
+}
+nav{
+    position: fixed;
+    background-color: #45015d;
+    width:  250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    padding: 10px 0 0 0;
+}
+nav h3{
+    color: white;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 10px 15px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+nav a:hover{
+    background-color: white;
+    color:#45015d;
+}
+main{
+    padding: 80px 40px 0 360px;
+}
+h1{
+   font-size: 64px;
+   font-weight: 400;
+}
+h2{
+    font-size: 48px;
+    font-weight: 400;
+    color: #45015d;
+}
+hr{
+    height:10px ;
+    background-color:#45015d ;  
+    border-radius:10px;
+    border:none;
+}
+.showcase img{
+    width: 45%;
+    min-width: 300px;
+    border-radius:10px;
+    margin: 2%;
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+.showcase div{
+    text-align: center;
+}
+.showcase img:hover{
+    opacity:1;
+}
+.designers__list{
+    text-align: center;
+}
+.member{
+    width: 30%;
+    min-width: 300px;
+    display: inline-block;
+    text-align: left;
+    margin: 10px 10px;
+}
+.member img{
+    width: 100%;
+    border-radius: 10px;
+}
+.member__info{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 5px 10px ;
+}
+.position{
+    color: grey;
+}
+.tariff{
+    background-color: #e7e7e7;
+    display: inline-block;
+    width: 45%;
+    min-width:300px;
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 0%;
+    text-align:center;
+}
+.name{
+    background-color: #45015d;
+    padding: 26px 0px ;
+    color: white;
+    font-size:26px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+li{
+    padding: 16px 0px;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+}
+.cost{
+    font-size: 22px;
+}
+.cost span{
+    font-size: 14px;
+    color: grey;
+    display: block;
+}
+li button{
+    color: white;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.basic{
+    background-color: #45015d;
+    border:1px solid #45015d
+}
+.basic:hover{
+    background: transparent;
+    color: #45015d;
+    cursor: pointer;
+}
+.pro{
+    background-color: #ff6219;
+}
+button.pro{
+    border:#ff6219 1px solid;
+}
+button.pro:hover{
+    cursor: pointer;
+    color: #ff6219;
+    background-color: transparent;
+}
+ul{
+    margin: 10px 10px;
+}
+.packages__list{
+    text-align: center;
+}
+input,textarea,form button{
+    width: 100%;
+    padding:10px ;
+    border-radius: 10px;
+    border:1px #45015d solid;
+    box-sizing: border-box;
+    box-shadow: 0 2.5px 5px #45015db4;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    resize: vertical;
+    transition:all 0.3s;
+}
+input:focus, textarea:focus{
+    box-shadow: 0 0 10px #45015d;
+}
+form button{
+    background-color: #45015d;
+    color: white;
+}
+form button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #45015d;
+}
+footer{
+    padding: 50px 25px;
+    color:white;
+    background-color: #45015d;
+    position:relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; 
+    z-index: 3;
+}
